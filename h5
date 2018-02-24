@@ -1,0 +1,18 @@
+#!/bin/sh
+if [ $# = 1 ]
+then
+string="It is "
+ending=""
+else
+string="They are "
+ending="s"
+fi
+echo This $0 command has $# argument${ending}.
+if [ $# != 0 ]
+then
+echo $string $*
+fi
+#if [ $# -eq 0 ]
+#then echo "no arguments"
+#else echo " there are $# argument which is $*"
+#fi

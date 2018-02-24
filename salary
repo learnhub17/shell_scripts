@@ -1,0 +1,4 @@
+a=$(cat a.txt | awk '{print $3}' | grep  [0-9] | sort -n | head -n1 )
+b=$(cat a.txt | awk '{print $3}' | grep  [0-9] | sort -n | tail -n1 )
+head -n1 a.txt 
+grep -e $a -e $b a.txt 

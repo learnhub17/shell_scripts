@@ -1,0 +1,24 @@
+echo "for loop :"
+
+for i in $( ls ); do
+echo item: $i
+done
+
+echo "while loop :"
+
+##########################
+COUNTER=0
+while [ $COUNTER -lt 10 ]; do
+echo The counter is $COUNTER
+let COUNTER=COUNTER+1
+done
+
+############################
+echo "until loop :"
+
+#!/bin/bash
+COUNTER=20
+until [ $COUNTER -lt 10 ]; do
+echo COUNTER $COUNTER
+let COUNTER-=1
+done

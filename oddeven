@@ -1,0 +1,12 @@
+#!/bin/bash
+n=1
+while [ $n -lt 30 ]
+do
+out=`expr $n % 2 `
+if [ $out -eq 0 ]
+then
+echo " $n is even"
+else echo " $n is odd"
+fi
+n=$(( $n + 1 ))
+done

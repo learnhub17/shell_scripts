@@ -1,0 +1,21 @@
+#!/bin/bash
+####script to find greatest number from input#####
+echo -e " enter 1st"
+read first
+echo -e " enter 2nd "
+read second
+echo -e " enter 3rd "
+read third
+
+if [ $first -gt $second ]; then
+if [ $first -gt $third ]; then
+echo "       $first is greater "
+fi
+else
+if [ $second -gt $third ]; then
+echo "       $second is greater "
+else
+echo "       $third is greater "
+fi
+fi
+##################################################

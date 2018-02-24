@@ -1,0 +1,24 @@
+#add=`expr $1 + $2`
+#sub=`expr $1 - $2`
+#mul=`expr $1 \* $2`
+#echo Addtion of $1 and $2 is $add
+#echo Subtraction of $2 from $1 is $sub
+#echo Multiplication of $1 and $2 is $mul
+#echo $$
+#echo this is $0
+#echo this is $1
+#echo this is $2
+#echo \ $$ PID of script
+#echo \ $# totoal arguments
+#echo $* all the arg
+#echo $@ all the
+#!/bin/bash
+if [ "$#" == "0" ]
+then 
+echo pass at least one parameter
+exit 1
+fi
+ while (( $# ))
+do echo you gave me $1
+shift
+done

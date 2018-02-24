@@ -1,0 +1,7 @@
+empid	depart	salary
+1	sales	100
+2	admin	59
+3 	it	655
+4	man	4356	
+5	he	636
+6 	who	10040

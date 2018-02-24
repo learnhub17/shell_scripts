@@ -1,0 +1,11 @@
+#!/bin/bash
+a=0
+while [ $a -lt 40 ]
+do
+echo $a
+if [ $a -eq 25 ]
+then break
+fi
+#let a=($a + 5)
+a=$((a + 5))
+done

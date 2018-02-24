@@ -1,0 +1,11 @@
+#size=`du -sh`
+for file in *
+do
+if [ ! -d $file ] #ie: if $file isn’t a directory
+then
+echo $file is file
+#echo $size $file 
+else
+echo "$file is a directory"
+fi
+done
